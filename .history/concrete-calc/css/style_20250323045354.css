@@ -70,9 +70,7 @@ label {
     transition: opacity 0.3s;
 }
 
-.mobile-btn.active {
-    background: green;
-}
+
 
 .mobile-btn.primary {
     background: var(--primary-color);

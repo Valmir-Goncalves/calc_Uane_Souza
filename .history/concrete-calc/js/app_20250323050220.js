@@ -85,24 +85,3 @@ function limparDados() {
     localStorage.removeItem('concreteCalcData');
 }
 
-// ... (seu código existente)
-
-// Função para adicionar a classe 'active' ao botão clicado
-function botaoClicado(botao) {
-    botao.classList.add('active');
-}
-
-// Função para remover a classe 'active' ao soltar o botão
-function botaoSolto(botao) {
-    botao.classList.remove('active');
-}
-
-// Adicionar eventos aos botões
-window.addEventListener('load', () => {
-    const botoes = document.querySelectorAll('.mobile-btn');
-    botoes.forEach(botao => {
-        botao.addEventListener('mousedown', () => botaoClicado(botao));
-        botao.addEventListener('mouseup', () => botaoSolto(botao));
-        botao.addEventListener('mouseleave', () => botaoSolto(botao)); // Remover caso o mouse saia do botão
-    });
-});
